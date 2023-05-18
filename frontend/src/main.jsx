@@ -9,10 +9,13 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import App from './App.jsx';
+import PrivateRoute from './components/PrivateRoute.jsx';
 import './index.css';
 import HomeScreen from './screens/HomeScreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
+import ProfileScreen from './screens/ProfileScreen.jsx';
 import RegisterScreen from './screens/RegisterScreen.jsx';
+import UsersScreen from './screens/UsersScreen.jsx';
 import store from './store.js';
 
 const router = createBrowserRouter(
@@ -21,6 +24,10 @@ const router = createBrowserRouter(
       <Route index={true} path='/' element={<HomeScreen />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
+      <Route path='/users' element={<UsersScreen />} />
+      <Route path='' element={<PrivateRoute />}>
+        <Route path='/profile' element={<ProfileScreen />} />
+      </Route>
     </ Route>
   )
 )
