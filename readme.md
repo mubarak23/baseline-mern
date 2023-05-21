@@ -1,4 +1,4 @@
-# MERN Authentication Starter
+# Base Line for MERN STACK APP
 
 This is a base line app for a MERN stack application with authentication. This is for a SPA (Single Page Application) workflow that uses the [Vite](https://vite.dev) Build tool.
 
