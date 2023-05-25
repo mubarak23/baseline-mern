@@ -112,9 +112,6 @@ const ProfileScreen = () => {
         </Button>
       </Form>
     </FormContainer>
-    <Button variant='primary' className='mt-3'>
-          Delete Account
-    </Button>
     </>
   )
 }
